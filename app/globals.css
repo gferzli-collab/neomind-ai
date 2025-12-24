@@ -24,3 +24,12 @@ body {
   backdrop-filter: blur(12px);             /* Equivalent to backdrop-blur-md */
   border: 1px solid rgba(51, 65, 85, 0.5); /* Equivalent to border-slate-700/50 */
 }
+
+/* Hide scrollbar for horizontal nav */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

@@ -14,8 +14,21 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       
+      {/* INTERNAL NAVIGATION TABS */}
+      <nav className="sticky top-20 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex gap-8 overflow-x-auto scrollbar-hide">
+            <a href="#hero" className="text-slate-300 hover:text-white font-medium whitespace-nowrap">Home</a>
+            <a href="#why-matters" className="text-slate-300 hover:text-white font-medium whitespace-nowrap">Why It Matters</a>
+            <a href="#difference" className="text-slate-300 hover:text-white font-medium whitespace-nowrap">Our Difference</a>
+            <a href="#what-we-do" className="text-slate-300 hover:text-white font-medium whitespace-nowrap">What We Do</a>
+            <a href="#cta" className="text-slate-300 hover:text-white font-medium whitespace-nowrap">Get Involved</a>
+          </div>
+        </div>
+      </nav>
+      
       {/* HERO SECTION */}
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden">
+      <section id="hero" className="relative pt-40 pb-24 px-6 overflow-hidden">
         {/* Background Glow Effect */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-sky-500/15 blur-[120px] rounded-full -z-10" />
         
@@ -48,7 +61,7 @@ export default function HomePage() {
       </section>
 
       {/* WHY THIS MATTERS */}
-      <section className="py-20 bg-slate-900/50 border-y border-slate-800">
+      <section id="why-matters" className="py-20 bg-slate-900/50 border-y border-slate-800">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Why This Matters</h2>
           <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -64,7 +77,7 @@ export default function HomePage() {
       </section>
 
       {/* THE DIFFERENCE (Pillars) */}
-      <section className="py-24 px-6 max-w-7xl mx-auto w-full">
+      <section id="difference" className="py-24 px-6 max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white">The NeoMIND-AI Difference</h2>
         </div>
@@ -94,7 +107,7 @@ export default function HomePage() {
       </section>
 
       {/* WHAT WE DO */}
-      <section className="py-24 bg-slate-900 border-t border-slate-800">
+      <section id="what-we-do" className="py-24 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Left: Text Content */}
@@ -171,7 +184,7 @@ export default function HomePage() {
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="py-24 text-center px-6">
+      <section id="cta" className="py-24 text-center px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Be Part of the Future of Neonatal AI</h2>
         <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
           Join us in shaping AI that is safe, equitable, and clinically meaningful.
