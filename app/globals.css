@@ -18,8 +18,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .glass-panel {
-    @apply bg-slate-900/40 backdrop-blur-md border border-slate-700/50;
-  }
+/* FIX: Using standard CSS here prevents the build error */
+.glass-panel {
+  background-color: rgba(15, 23, 42, 0.4); /* Equivalent to bg-slate-900/40 */
+  backdrop-filter: blur(12px);             /* Equivalent to backdrop-blur-md */
+  border: 1px solid rgba(51, 65, 85, 0.5); /* Equivalent to border-slate-700/50 */
 }
